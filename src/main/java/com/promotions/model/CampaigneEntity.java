@@ -1,4 +1,4 @@
-package com.promotions.entity;
+package com.promotions.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,7 +13,7 @@ import lombok.Setter;
 @Entity
 @Data
 @Getter @Setter
-public class Campaign {
+public class CampaigneEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

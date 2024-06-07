@@ -1,8 +1,21 @@
 package com.promotions.service;
 
-import com.promotions.entity.Campaign;
+import java.util.List;
+
+import com.promotions.model.CampaigneEntity;
 
 public interface CampaignService {
 	
-	 Campaign createCampaign(Campaign campaign);
+	  List<CampaigneEntity> getAllCampaigns();
+	 
+	  CampaigneEntity getCampainById(Long id);
+	 
+	  CampaigneEntity createCampaign(CampaigneEntity campaign);
+	 
+	  CampaigneEntity updateCampaign(Long id, CampaigneEntity campaign);
+	 
+	  void deleteCampaign(Long id);
+	 
+	 
+	 
 }
